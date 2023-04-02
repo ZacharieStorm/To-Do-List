@@ -1,0 +1,110 @@
+body {
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  li.completed {
+    background-color: #d9d9d9;
+  }
+  
+  li .task {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  li .edit {
+    display: none;
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  li.editing .task {
+    display: none;
+  }
+  
+  li.editing .edit {
+    display: flex;
+  }
+  
+  li button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  li button.complete {
+    background-color: #4CAF50;
+  }
+  
+  li button.edit {
+    background-color: #2196F3;
+  }
+  
+  #todo-filter {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  #todo-filter button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #todo-filter button.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
